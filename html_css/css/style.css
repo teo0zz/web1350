@@ -1,0 +1,26 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+html, body {
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  font-family : 'NanumSquare', sans-serif;
+  font-size: 50px;
+  border-bottom: 4px solid black;
+  padding-bottom: 30px;
+  padding-left: 20px;
+
+}
+
+img {
+  width: 100%;
+}
+
+strong {
+  color: rgb(151, 210, 230);
+}

@@ -1,0 +1,21 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+div {
+  width: 90vw;
+  height: 90vh;
+
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+
+  border: 2px solid lightblue;
+  border-radius: 5%;
+}
+
+h2 {
+  font-family : 'NanumSquare', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: lightblue;
+}

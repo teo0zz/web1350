@@ -1,0 +1,358 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  font-family : 'NanumSquare', sans-serif;
+  flex-direction: column;
+  margin: 0;
+  background-color: white;
+  -ms-overflow-style: none;
+
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  font-family : 'NanumSquare', sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: lightblue;
+
+  margin-top: 10%;
+  text-align: center;
+}
+
+a {
+  text-decoration-line: none;
+  color: black;
+}
+
+/*login*/
+
+#login-page {
+  background-color: rgba(128, 128, 128, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  z-index: 5;
+  display: none;
+}
+
+#login-div {
+  width: 600px;
+  height: 800px;
+
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+
+  border: 4px solid black;
+  border-radius: 5%;
+
+  background-color: white;
+
+  z-index: 5;
+  padding: 20px;
+  display: none;
+}
+
+#login-div>button {
+  border: none;
+  background: none;
+  outline: none;
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+#login-div input{
+  width: 100%;
+  height: 60px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  background-color: #F8F8F8;
+}
+
+#login-div input[type="submit"]{
+  color: #fff;
+  font-size: 16px;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+
+/*login*/
+/*category*/
+
+.category-div {
+  width: 600px;
+  height: calc(100vh - 62px);
+
+  background-color: white;
+  border: 2px solid grey;
+  
+  z-index: 5;
+  position: absolute;
+  right: 0;
+  top: 62px;
+
+  display: none;
+
+}
+
+.category-div>ul>li {
+  width: 80%;
+  list-style-type: none;
+  font-family : 'NanumSquare', sans-serif;
+  font-size: 35px;
+  margin: 20px;
+
+}
+
+.category-div>.bottom{
+  width: 100%;
+  height: 100px;
+  background-color: lightblue;
+  position: absolute;
+  bottom: 0;
+  
+}
+
+.none-category {
+  border: none;
+  background: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+
+  margin-top: 12px;
+  margin-left: 7px;
+}
+
+/*category*/
+/*header*/
+
+
+.header {
+  width: 100vw;
+  height: 70px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+h1>.home {
+  text-decoration-line: none;
+  font-size: 25px;
+  color: black;
+  display: inline-block;
+  margin: 10px;
+
+}
+
+.user {
+  margin-left:auto;
+}
+
+.login-btn {
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+.login-btn:hover {
+  color: rgb(8, 107, 168);
+}
+
+.sign-btn {
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.sign-btn:hover {
+  color: rgb(8, 107, 168);
+}
+
+/*header*/
+/*block1*/
+
+.block1 {
+  width: 100vw;
+  height: 120px;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+}
+
+.search-box {
+  width: 1000px;
+  height: 70px;
+  background-color: white;
+  border-radius: 40px;
+  margin-left: 950px;
+  margin-top: 20px;
+  
+}
+
+.search-box>.search-txt {
+  width: 900px;
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.search-box>.search-btn {
+  border: none;
+  background: none;
+  outline: none;
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+
+}
+
+.list-btn {
+  border: none;
+  background: none;
+  outline: none;
+  width: 100px;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
+
+/*block1*/
+
+
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+
+  z-index: 0;
+}
+
+.side_left {
+  width: 40%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.side_right {
+  width: 60%;
+  height: 100%;
+  border-left: 2px solid lightblue;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+
+#seoul-location {
+  /*max-width: 100%;*/
+  width: 90%;
+  margin: 50px;
+}
+
+#overlayImage {
+  position: absolute;
+  display: none; 
+  z-index: 10;
+}
+
+.lo-div {
+  width: 100%;
+  flex: 1;
+}
+
+.lo-div2 {
+  width: 90%;
+  height: 80%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.c-div {
+  width: 100%;
+  height: 20%;
+  margin: 0;
+  padding: 0;
+}
+
+.r-btn {
+  width: 17%;
+  height: 80%;
+  margin: 13px;
+  margin-left:14px;
+  background-color: white;
+  border: 1 solid grey;
+  font-size: 20px;
+  font-weight: 400;
+  font-family : 'NanumSquare', sans-serif;
+}
+
+.r-btn:hover {
+  background-color: lightblue;
+  border: none;
+  color: white;
+}
+
+.iframe-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none; /* 테두리 제거 */
+  overflow: hidden;
+}
+
+.custom-cursor {
+  cursor: url(../img/location25.png) 2 2, auto;
+}
+
+
+
+
